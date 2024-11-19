@@ -61,7 +61,7 @@ int main(){
 
     void mostrarMenu() {
     std::cout << "\n--- Menú ---\n";
-    std::cout << "1. Crear la pila de pasajeros\n";
+    std::cout << "1. Crear la pila de pasajeros geis\n";
     std::cout << "2. Mostrar los pasajeros en la pila\n";
     std::cout << "3. Borrar la pila de pasajeros\n";
     std::cout << "4. Simular el paso de N minutos\n";
