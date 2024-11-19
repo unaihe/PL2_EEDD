@@ -1,0 +1,53 @@
+# depslib dependency file v1.0
+1731606904 source:c:\users\lucas\documents\github\pl2_eedd\pl2_eedd\main.cpp
+	<iostream>
+	"Pasajero.h"
+	"Pila.h"
+	"Aeropuerto.h"
+
+1731606692 source:c:\users\lucas\documents\github\pl2_eedd\pl2_eedd\src\aeropuerto.cpp
+	"Aeropuerto.h"
+	"Pasajero.h"
+	<iostream>
+	"Box.h"
+
+1731606704 source:c:\users\lucas\documents\github\pl2_eedd\pl2_eedd\src\box.cpp
+	"Box.h"
+	<iostream>
+
+1731606738 source:c:\users\lucas\documents\github\pl2_eedd\pl2_eedd\src\cola.cpp
+	"Cola.h"
+	"Pasajero.h"
+	<iostream>
+
+1731606753 source:c:\users\lucas\documents\github\pl2_eedd\pl2_eedd\src\lista.cpp
+	"Lista.h"
+	<iostream>
+	"Box.h"
+	"NodoLista.h"
+
+1731606872 source:c:\users\lucas\documents\github\pl2_eedd\pl2_eedd\src\listapasajeros.cpp
+	"ListaPasajeros.h"
+
+1731606792 source:c:\users\lucas\documents\github\pl2_eedd\pl2_eedd\src\nodocola.cpp
+	"NodoCola.h"
+	"Pasajero.h"
+
+1731606803 source:c:\users\lucas\documents\github\pl2_eedd\pl2_eedd\src\nodolista.cpp
+	"NodoLista.h"
+	"Box.h"
+
+1731606839 source:c:\users\lucas\documents\github\pl2_eedd\pl2_eedd\src\nodopila.cpp
+	"NodoPila.h"
+
+1731606851 source:c:\users\lucas\documents\github\pl2_eedd\pl2_eedd\src\pasajero.cpp
+	"Pasajero.h"
+	<iostream>
+
+1731606889 source:c:\users\lucas\documents\github\pl2_eedd\pl2_eedd\src\pila.cpp
+	"Pila.h"
+	"NodoPila.h"
+	<cstddef>
+	"Pasajero.h"
+	<iostream>
+

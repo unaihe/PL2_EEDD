@@ -32,7 +32,29 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Aeropuerto.h" />
+		<Unit filename="include/Box.h" />
+		<Unit filename="include/Cola.h" />
+		<Unit filename="include/Lista.h" />
+		<Unit filename="include/ListaPasajeros.h" />
+		<Unit filename="include/NodoCola.h" />
+		<Unit filename="include/NodoLista.h" />
+		<Unit filename="include/NodoListaPasajeros.h" />
+		<Unit filename="include/NodoPila.h" />
+		<Unit filename="include/Pasajero.h" />
+		<Unit filename="include/Pila.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Aeropuerto.cpp" />
+		<Unit filename="src/Box.cpp" />
+		<Unit filename="src/Cola.cpp" />
+		<Unit filename="src/Lista.cpp" />
+		<Unit filename="src/ListaPasajeros.cpp" />
+		<Unit filename="src/NodoCola.cpp" />
+		<Unit filename="src/NodoLista.cpp" />
+		<Unit filename="src/NodoListaPasajeros.cpp" />
+		<Unit filename="src/NodoPila.cpp" />
+		<Unit filename="src/Pasajero.cpp" />
+		<Unit filename="src/Pila.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
