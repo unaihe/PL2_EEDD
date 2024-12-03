@@ -1,30 +1,30 @@
-#include "ABBPasajeros.h"
+#include "ABB.h"
 #include "NodoABB.h"
 
-ABBPasajeros::ABBPasajeros() //crea árbol vacío
+ABB::ABB() //crea árbol vacío
 {
     //ctor
     raiz=NULL;
 }
-ABBPasajeros::ABBPasajeros(NodoABB *r)
+ABB::ABB(NodoABB *r)
 {
     raiz=r;
 
 }
-ABBPasajeros::ABBPasajeros(string nom, NodoABB *hIz, NodoABB *hDer)//constructor que crea árbolBin con dato y dos subárboles
+ABB::ABB(string nom, NodoABB *hIz, NodoABB *hDer)//constructor que crea árbolBin con dato y dos subárboles
 {
     raiz= new NodoABB(nom, hIz, hDer);//llamamos al constructor del Nodo y raiz es un puntero al Nodo creado
 
 }
 
-ABBPasajeros::~ABBPasajeros()
+ABB::~ABB()
 {
     //dtor
 }
 
 
-void ABBPasajeros::verInOrden() { verInOrden(raiz);}
-void ABBPasajeros::verInOrden(NodoABB *arb)// Método para ver Arbol empezando por su izquirda, después pasamos por la raiz y por ultimo por la rama derecha
+void ABB::verInOrden() { verInOrden(raiz);}
+void ABB::verInOrden(NodoABB *arb)// Método para ver Arbol empezando por su izquirda, después pasamos por la raiz y por ultimo por la rama derecha
 {
     if (arb) {
        verInOrden(arb->hi);//Recursion para la rama izquierda
@@ -42,11 +42,11 @@ void ABBPasajeros::verInOrden(NodoABB *arb)// Método para ver Arbol empezando po
 }*/
 
 
-void ABBPasajeros::insertar(string nombre)
+void ABB::insertar(string nombre)
 {
     insertar(nombre, raiz);
 }
-void ABBPasajeros::insertar(string nombre, NodoABB *nodo)//En este método insertamos un nombre en el ABB para que siga ordenado
+void ABB::insertar(string nombre, NodoABB *nodo)//En este método insertamos un nombre en el ABB para que siga ordenado
 {
 
 
@@ -87,6 +87,5 @@ void ABBPasajeros::insertar(string nombre, NodoABB *nodo)//En este método insert
         }
     }
 }
-
 
 
