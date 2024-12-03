@@ -34,7 +34,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/ABBPasajeros.h" />
+		<Unit filename="include/ABB.h" />
 		<Unit filename="include/Aeropuerto.h" />
 		<Unit filename="include/Box.h" />
 		<Unit filename="include/Cola.h" />
@@ -48,7 +48,7 @@
 		<Unit filename="include/Pasajero.h" />
 		<Unit filename="include/Pila.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/ABBPasajeros.cpp" />
+		<Unit filename="src/ABB.cpp" />
 		<Unit filename="src/Aeropuerto.cpp" />
 		<Unit filename="src/Box.cpp" />
 		<Unit filename="src/Cola.cpp" />
