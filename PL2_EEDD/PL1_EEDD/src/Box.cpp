@@ -34,6 +34,7 @@ void Box::liberar_box(int i) {
     if (ocupado) {
         pasajeros++;
         tiempoTotal+=i-pasajero.getHora_llegada();
+        pasajero.setTiempoFinal(i-pasajero.getHora_llegada());
         media=tiempoTotal/pasajeros;
         std::cout << "Liberando el box " << id << " ocupado por el pasajero " << pasajero.getId() << ".\n";
         ocupado = false;

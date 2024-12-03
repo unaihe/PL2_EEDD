@@ -16,6 +16,7 @@ class Pasajero
         const char* getDestino() const;
         int getPrioridad() const;
         void setTiempoFinal(int i);
+        int getTiempoFinal();
         void mostrarPasajero(const Pasajero& pasajero);
 
 

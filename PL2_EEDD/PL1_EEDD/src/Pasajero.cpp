@@ -37,6 +37,11 @@ int Pasajero::getHora_llegada() const
     return hora_llegada;
 };
 
+int Pasajero::getTiempoFinal()
+{
+    return tiempoFinal;
+};
+
 int Pasajero::getDuracion_control() const
 {
     return duracion_control;
