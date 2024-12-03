@@ -42,13 +42,13 @@ void Aeropuerto::crearPila()
     Pasajero pa9(9, 15, 29, "Australia", 7);
     Pasajero pa10(10, 17, 8, "Sudáfrica", 5);
     Pasajero pa11(11, 19, 16, "Australia", 7);
-    Pasajero pa12(12, 19, 13, "Indonesia", 6);
 
 
 
 
 
-    pilaPasajeros.apilar(pa12);
+
+
     pilaPasajeros.apilar(pa11);
     pilaPasajeros.apilar(pa10);
     pilaPasajeros.apilar(pa9);
