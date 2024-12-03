@@ -1,0 +1,341 @@
+# depslib dependency file v1.0
+1729785813 source:c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\main.cpp
+	<iostream>
+	"Pasajero.h"
+	"Pila.h"
+	"Aeropuerto.h"
+
+1729783819 c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\include\pasajero.h
+
+1730552685 source:c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\src\cola.cpp
+	"Cola.h"
+	"Pasajero.h"
+	<iostream>
+
+1730552608 c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\include\cola.h
+	"NodoCola.h"
+	"Pasajero.h"
+
+1729578782 c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\include\nodocola.h
+	"Pasajero.h"
+	<cstddef>
+
+1729843418 source:c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\src\nodocola.cpp
+	"NodoCola.h"
+	"Pasajero.h"
+
+1729687819 source:c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\src\nodopila.cpp
+	"NodoPila.h"
+
+1729687819 c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\include\nodopila.h
+	"Pasajero.h"
+	<cstddef>
+
+1730655243 source:c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\main.cpp
+	<iostream>
+	"Pasajero.h"
+	"Pila.h"
+	"Aeropuerto.h"
+
+1729786209 c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\include\pasajero.h
+
+1730563935 source:c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\src\cola.cpp
+	"Cola.h"
+	"Pasajero.h"
+	<iostream>
+
+1730563935 c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\include\cola.h
+	"NodoCola.h"
+	"Pasajero.h"
+
+1729579881 c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\include\nodocola.h
+	"Pasajero.h"
+	<cstddef>
+
+1729806501 source:c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\src\nodocola.cpp
+	"NodoCola.h"
+	"Pasajero.h"
+
+1729633265 source:c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\src\nodopila.cpp
+	"NodoPila.h"
+
+1729633181 c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\include\nodopila.h
+	"Pasajero.h"
+	<cstddef>
+
+1730187642 source:c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\src\pila.cpp
+	"Pila.h"
+	"NodoPila.h"
+	<cstddef>
+	"Pasajero.h"
+	<iostream>
+
+1729855897 c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\include\pila.h
+	"Pasajero.h"
+	"NodoPila.h"
+
+1730187728 source:c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\src\pila.cpp
+	"Pila.h"
+	"NodoPila.h"
+	<cstddef>
+	"Pasajero.h"
+	<iostream>
+
+1729801267 c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\include\pila.h
+	"Pasajero.h"
+	"NodoPila.h"
+
+1729629232 source:c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\src\pasajero.cpp
+	"Pasajero.h"
+	<iostream>
+
+1730595679 source:c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\src\box.cpp
+	"Box.h"
+	<iostream>
+
+1730594432 c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\include\box.h
+	"Pasajero.h"
+	"Cola.h"
+
+1729785386 source:c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\src\pasajero.cpp
+	"Pasajero.h"
+	<iostream>
+
+1730575992 source:c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\src\box.cpp
+	"Box.h"
+	<iostream>
+
+1730576004 c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\include\box.h
+	"Pasajero.h"
+	"Cola.h"
+
+1730576227 source:c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\src\aeropuerto.cpp
+	"Aeropuerto.h"
+	"Pasajero.h"
+	<iostream>
+	"Box.h"
+
+1730576283 c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\include\aeropuerto.h
+	<vector>
+	"Cola.h"
+	"Pila.h"
+	"Box.h"
+	"Lista.h"
+
+1730659498 c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\include\aeropuerto.h
+	<vector>
+	"Cola.h"
+	"Pila.h"
+	"Box.h"
+	"Lista.h"
+
+1730659865 source:c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\src\aeropuerto.cpp
+	"Aeropuerto.h"
+	"Pasajero.h"
+	<iostream>
+	"Box.h"
+
+1730575754 source:c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\src\nodolista.cpp
+	"NodoLista.h"
+	"Box.h"
+
+1730575764 c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\include\nodolista.h
+	"Box.h"
+
+1730576073 source:c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\src\lista.cpp
+	"Lista.h"
+	<iostream>
+	"Box.h"
+	"NodoLista.h"
+
+1730576065 c:\users\unaih\documents\github\pl1_eedd\pl1_eedd\include\lista.h
+	"Box.h"
+	"NodoLista.h"
+
+1730634720 c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\include\lista.h
+	"Box.h"
+	"NodoLista.h"
+
+1730591796 c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\include\nodolista.h
+	"Box.h"
+
+1730634720 source:c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\src\lista.cpp
+	"Lista.h"
+	<iostream>
+	"Box.h"
+	"NodoLista.h"
+
+1730591796 source:c:\users\lucas\documents\github\pl1_eedd\pl1_eedd\src\nodolista.cpp
+	"NodoLista.h"
+	"Box.h"
+
+1730655243 source:c:\users\lucas\desktop\pl1_eedd\pl1_eedd\main.cpp
+	<iostream>
+	"Pasajero.h"
+	"Pila.h"
+	"Aeropuerto.h"
+
+1729786209 c:\users\lucas\desktop\pl1_eedd\pl1_eedd\include\pasajero.h
+
+1729855897 c:\users\lucas\desktop\pl1_eedd\pl1_eedd\include\pila.h
+	"Pasajero.h"
+	"NodoPila.h"
+
+1729633181 c:\users\lucas\desktop\pl1_eedd\pl1_eedd\include\nodopila.h
+	"Pasajero.h"
+	<cstddef>
+
+1730659498 c:\users\lucas\desktop\pl1_eedd\pl1_eedd\include\aeropuerto.h
+	<vector>
+	"Cola.h"
+	"Pila.h"
+	"Box.h"
+	"Lista.h"
+
+1730563935 c:\users\lucas\desktop\pl1_eedd\pl1_eedd\include\cola.h
+	"NodoCola.h"
+	"Pasajero.h"
+
+1729579881 c:\users\lucas\desktop\pl1_eedd\pl1_eedd\include\nodocola.h
+	"Pasajero.h"
+	<cstddef>
+
+1730594432 c:\users\lucas\desktop\pl1_eedd\pl1_eedd\include\box.h
+	"Pasajero.h"
+	"Cola.h"
+
+1730634720 c:\users\lucas\desktop\pl1_eedd\pl1_eedd\include\lista.h
+	"Box.h"
+	"NodoLista.h"
+
+1730591796 c:\users\lucas\desktop\pl1_eedd\pl1_eedd\include\nodolista.h
+	"Box.h"
+
+1732000808 source:c:\users\lucas\desktop\pl1_eedd\pl1_eedd\src\aeropuerto.cpp
+	"Aeropuerto.h"
+	"Pasajero.h"
+	<iostream>
+	"Box.h"
+
+1730595679 source:c:\users\lucas\desktop\pl1_eedd\pl1_eedd\src\box.cpp
+	"Box.h"
+	<iostream>
+
+1730563935 source:c:\users\lucas\desktop\pl1_eedd\pl1_eedd\src\cola.cpp
+	"Cola.h"
+	"Pasajero.h"
+	<iostream>
+
+1730659901 source:c:\users\lucas\desktop\pl1_eedd\pl1_eedd\src\lista.cpp
+	"Lista.h"
+	<iostream>
+	"Box.h"
+	"NodoLista.h"
+
+1729806501 source:c:\users\lucas\desktop\pl1_eedd\pl1_eedd\src\nodocola.cpp
+	"NodoCola.h"
+	"Pasajero.h"
+
+1730591796 source:c:\users\lucas\desktop\pl1_eedd\pl1_eedd\src\nodolista.cpp
+	"NodoLista.h"
+	"Box.h"
+
+1729633265 source:c:\users\lucas\desktop\pl1_eedd\pl1_eedd\src\nodopila.cpp
+	"NodoPila.h"
+
+1729629232 source:c:\users\lucas\desktop\pl1_eedd\pl1_eedd\src\pasajero.cpp
+	"Pasajero.h"
+	<iostream>
+
+1730187642 source:c:\users\lucas\desktop\pl1_eedd\pl1_eedd\src\pila.cpp
+	"Pila.h"
+	"NodoPila.h"
+	<cstddef>
+	"Pasajero.h"
+	<iostream>
+
+1733244031 source:c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\main.cpp
+	<iostream>
+	"Pasajero.h"
+	"Pila.h"
+	"Aeropuerto.h"
+
+1733245349 c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\include\pasajero.h
+
+1733244032 c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\include\pila.h
+	"Pasajero.h"
+	"NodoPila.h"
+
+1733244032 c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\include\nodopila.h
+	"Pasajero.h"
+	<cstddef>
+
+1733244032 c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\include\aeropuerto.h
+	<vector>
+	"Cola.h"
+	"Pila.h"
+	"Box.h"
+	"Lista.h"
+
+1733244032 c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\include\cola.h
+	"NodoCola.h"
+	"Pasajero.h"
+
+1733244032 c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\include\nodocola.h
+	"Pasajero.h"
+	<cstddef>
+
+1733245023 c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\include\box.h
+	"Pasajero.h"
+	"Cola.h"
+
+1733244032 c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\include\lista.h
+	"Box.h"
+	"NodoLista.h"
+
+1733244032 c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\include\nodolista.h
+	"Box.h"
+
+1733245023 source:c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\src\aeropuerto.cpp
+	"Aeropuerto.h"
+	"Pasajero.h"
+	<iostream>
+	"Box.h"
+
+1733245023 source:c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\src\box.cpp
+	"Box.h"
+	<iostream>
+
+1733244032 source:c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\src\cola.cpp
+	"Cola.h"
+	"Pasajero.h"
+	<iostream>
+
+1733244032 source:c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\src\lista.cpp
+	"Lista.h"
+	<iostream>
+	"Box.h"
+	"NodoLista.h"
+
+1733244032 source:c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\src\nodocola.cpp
+	"NodoCola.h"
+	"Pasajero.h"
+
+1733244033 source:c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\src\nodolista.cpp
+	"NodoLista.h"
+	"Box.h"
+
+1733244033 source:c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\src\nodopila.cpp
+	"NodoPila.h"
+
+1733245244 source:c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\src\pasajero.cpp
+	"Pasajero.h"
+	<iostream>
+
+1733244033 source:c:\users\unai\onedrive\escritorio\pl1_eedd\pl1_eedd\src\pila.cpp
+	"Pila.h"
+	"NodoPila.h"
+	<cstddef>
+	"Pasajero.h"
+	<iostream>
+
