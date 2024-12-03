@@ -13,12 +13,19 @@ Pasajero::Pasajero(int id,int hora_llegada,int duracion_control, const char* des
     this->duracion_control=duracion_control;
     this->destino=destino;
     this->prioridad=prioridad;
+    this->tiempoFinal=0;
+    this->tiempoAeropuerto=0;
 }
 
 Pasajero::~Pasajero()
 {
     //dtor
 }
+
+void Pasajero::setTiempoFinal(int i)
+{
+    this->tiempoFinal=i;
+};
 
 int Pasajero::getId() const
 {

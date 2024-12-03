@@ -30,8 +30,11 @@ void Box::asignar_pasajero(Pasajero p) {
         colaPasajeros.encolar(p);
     }
 }
-void Box::liberar_box() {
+void Box::liberar_box(int i) {
     if (ocupado) {
+        pasajeros++;
+        tiempoTotal+=i-pasajero.getHora_llegada();
+        media=tiempoTotal/pasajeros;
         std::cout << "Liberando el box " << id << " ocupado por el pasajero " << pasajero.getId() << ".\n";
         ocupado = false;
         tiempo_restante = 0;
@@ -51,7 +54,7 @@ void Box::actualizar_tiempo(int minutos) {
 
 
         if (tiempo_restante <= 0) {
-            liberar_box();
+            liberar_box(minutos);
             std::cout << "El pasajero ha salido del box " << id << "." << std::endl;
         }
     }
@@ -83,8 +86,9 @@ void Box::disminuirTiempo(int i) {
 
 
         if (tiempo_restante <= 0) {
-            liberar_box();
+            liberar_box(i);
             std::cout << "El pasajero ha terminado y el box " << id << " está libre.\n";
+            std::cout << "La media de tiempo que pasan los pasajeros en este momento es de: " << media << " \n";
         }
     }
 }

@@ -10,7 +10,7 @@ class Box
         Box(int id);
         virtual ~Box();
         void asignar_pasajero(Pasajero p);
-        void liberar_box();
+        void liberar_box(int i);
         bool esta_libre();
         void actualizar_tiempo(int minutos);
         void mostrar();
@@ -27,8 +27,10 @@ class Box
         bool ocupado=false;
         Pasajero pasajero;
         int tiempo_restante;
+        int media=0;
         Cola colaPasajeros;
-
+        int tiempoTotal=0;
+        int pasajeros=0;
 };
 
 #endif // BOX_H
