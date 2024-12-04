@@ -1,0 +1,255 @@
+# depslib dependency file v1.0
+1729185608 source:c:\users\gogoh\onedrive\escritorio\hugo\ingeniería informática\estructuras de datos\terminal\main.cpp
+	<iostream>
+	"Pilas.h"
+	"NodoPilas.h"
+	"Colas.h"
+
+1729002883 c:\users\gogoh\onedrive\escritorio\hugo\ingeniería informática\estructuras de datos\terminal\include\pilas.h
+	"NodoPilas.h"
+
+1729002075 c:\users\gogoh\onedrive\escritorio\hugo\ingeniería informática\estructuras de datos\terminal\include\nodopilas.h
+	<iostream>
+
+1729002258 source:c:\users\gogoh\onedrive\escritorio\hugo\ingeniería informática\estructuras de datos\terminal\src\nodopilas.cpp
+	"NodoPilas.h"
+
+1729014899 source:c:\users\gogoh\onedrive\escritorio\hugo\ingeniería informática\estructuras de datos\terminal\src\pilas.cpp
+	"Pilas.h"
+	"NodoPilas.h"
+	"iostream"
+
+1729011976 source:c:\users\gogoh\onedrive\escritorio\hugo\ingeniería informática\estructuras de datos\terminal\src\nodocolas.cpp
+	"NodoColas.h"
+
+1729011691 c:\users\gogoh\onedrive\escritorio\hugo\ingeniería informática\estructuras de datos\terminal\include\nodocolas.h
+	<iostream>
+	"Persona.h"
+
+1729016081 source:c:\users\gogoh\onedrive\escritorio\hugo\ingeniería informática\estructuras de datos\terminal\src\persona.cpp
+	"Persona.h"
+	"iostream"
+
+1729015531 c:\users\gogoh\onedrive\escritorio\hugo\ingeniería informática\estructuras de datos\terminal\include\persona.h
+
+1729504321 source:c:\users\gogoh\onedrive\escritorio\hugo\ingeniería informática\estructuras de datos\terminal\src\colas.cpp
+	"Colas.h"
+	"iostream"
+
+1729183098 c:\users\gogoh\onedrive\escritorio\hugo\ingeniería informática\estructuras de datos\terminal\include\colas.h
+	"NodoColas.h"
+	"Persona.h"
+
+1729579057 D
+
+1733211070 source:c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\main.cpp
+	<iostream>
+	"Pilas.h"
+	"NodoPilas.h"
+	"Colas.h"
+	"T4Madrid.h"
+
+1729583371 source:c:\users\adria\onedrive\documentos\github\proyecto_estructura\terminal\main.cpp
+	<iostream>
+	"Pilas.h"
+	"NodoPilas.h"
+	"Colas.h"
+
+1729582704 0b1b6527ea43e10a51e8c1c079224a2e23ddd
+	<iostream>
+	"Pilas.h"
+	"NodoPilas.h"
+	"Colas.h"
+
+1729578970 ed5ea86c9cb909c376bea7a008efb5fc0d4ca
+	<iostream>
+	"Pilas.h"
+	"NodoPilas.h"
+	"Colas.h"
+
+1729582704 c:\users\adria\onedrive\documentos\github\proyecto_estructura\terminal\include\pilas.h
+	"NodoPilas.h"
+
+1729582704 c:\users\adria\onedrive\documentos\github\proyecto_estructura\terminal\include\nodopilas.h
+	<iostream>
+	"Persona.h"
+
+1729578230 c:\users\adria\onedrive\documentos\github\proyecto_estructura\terminal\include\colas.h
+	"NodoColas.h"
+	"Persona.h"
+
+1729578230 c:\users\adria\onedrive\documentos\github\proyecto_estructura\terminal\include\nodocolas.h
+	<iostream>
+	"Persona.h"
+
+1729852436 c:\users\adria\onedrive\documentos\github\proyecto_estructura\terminal\include\persona.h
+
+1729582704 source:c:\users\adria\onedrive\documentos\github\proyecto_estructura\terminal\src\colas.cpp
+	"Colas.h"
+	"iostream"
+
+1729578230 source:c:\users\adria\onedrive\documentos\github\proyecto_estructura\terminal\src\nodocolas.cpp
+	"NodoColas.h"
+
+1729582704 source:c:\users\adria\onedrive\documentos\github\proyecto_estructura\terminal\src\nodopilas.cpp
+	"NodoPilas.h"
+
+1729852436 source:c:\users\adria\onedrive\documentos\github\proyecto_estructura\terminal\src\persona.cpp
+	"Persona.h"
+	"iostream"
+
+1729583089 source:c:\users\adria\onedrive\documentos\github\proyecto_estructura\terminal\src\pilas.cpp
+	"Pilas.h"
+	"NodoPilas.h"
+	"iostream"
+
+1729259135 
+
+1730667595 c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\include\pilas.h
+	"NodoPilas.h"
+
+1729875040 c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\include\nodopilas.h
+	<iostream>
+	"Persona.h"
+
+1729179498 c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\include\colas.h
+	"NodoColas.h"
+	"Persona.h"
+
+1729008091 c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\include\nodocolas.h
+	<iostream>
+	"Persona.h"
+
+1730187696 c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\include\persona.h
+
+1729008376 source:c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\src\nodocolas.cpp
+	"NodoColas.h"
+
+1732554597 source:c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\src\colas.cpp
+	"Colas.h"
+	"iostream"
+
+1730187709 source:c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\src\persona.cpp
+	"Persona.h"
+	"iostream"
+	<cstring>
+
+1729871643 source:c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\src\nodopilas.cpp
+	"NodoPilas.h"
+
+1729852326 source:c:\users\adria\onedrive\documentos\github\proyecto_estructura\terminal\src\box.cpp
+	"Box.h"
+
+1729582919 c:\users\adria\onedrive\documentos\github\proyecto_estructura\terminal\include\box.h
+	"Persona.h"
+
+1730667630 source:c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\src\pilas.cpp
+	"Pilas.h"
+	"NodoPilas.h"
+	"iostream"
+
+1733211576 source:c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\src\t4madrid.cpp
+	"T4Madrid.h"
+	<iostream>
+
+1732727631 c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\include\t4madrid.h
+	"Colas.h"
+	"Pilas.h"
+	"Persona.h"
+	"Box.h"
+	"Lista.h"
+
+1732555432 c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\include\box.h
+	"Persona.h"
+	"Colas.h"
+
+1732606642 source:c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\src\box.cpp
+	"Box.h"
+	<iostream>
+
+1732727967 source:c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\src\lista.cpp
+	"Lista.h"
+	<iostream>
+
+1732726539 c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\include\lista.h
+	"Box.h"
+	"Persona.h"
+
+1730662468 c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\include\nodolista.h
+	<iostream>
+	"Box.h"
+
+1730662475 source:c:\users\gogoh\onedrive\documentos\github\proyecto_estructura\terminal\src\nodolista.cpp
+	"NodoLista.h"
+
+1733347786 source:c:\users\unai\downloads\terminal_pl1\terminal\main.cpp
+	<iostream>
+	"Pilas.h"
+	"NodoPilas.h"
+	"Colas.h"
+	"T4Madrid.h"
+
+1733347786 c:\users\unai\downloads\terminal_pl1\terminal\include\pilas.h
+	"NodoPilas.h"
+
+1733347786 c:\users\unai\downloads\terminal_pl1\terminal\include\nodopilas.h
+	<iostream>
+	"Persona.h"
+
+1733347786 c:\users\unai\downloads\terminal_pl1\terminal\include\persona.h
+
+1733347786 c:\users\unai\downloads\terminal_pl1\terminal\include\colas.h
+	"NodoColas.h"
+	"Persona.h"
+
+1733347786 c:\users\unai\downloads\terminal_pl1\terminal\include\nodocolas.h
+	<iostream>
+	"Persona.h"
+
+1733347786 c:\users\unai\downloads\terminal_pl1\terminal\include\t4madrid.h
+	"Colas.h"
+	"Pilas.h"
+	"Persona.h"
+	"Box.h"
+	"Lista.h"
+
+1733347786 c:\users\unai\downloads\terminal_pl1\terminal\include\box.h
+	"Persona.h"
+	"Colas.h"
+
+1733347786 c:\users\unai\downloads\terminal_pl1\terminal\include\lista.h
+	"Box.h"
+	"Persona.h"
+
+1733347787 source:c:\users\unai\downloads\terminal_pl1\terminal\src\box.cpp
+	"Box.h"
+	<iostream>
+
+1733347787 source:c:\users\unai\downloads\terminal_pl1\terminal\src\colas.cpp
+	"Colas.h"
+	"iostream"
+
+1733347787 source:c:\users\unai\downloads\terminal_pl1\terminal\src\lista.cpp
+	"Lista.h"
+	<iostream>
+
+1733347787 source:c:\users\unai\downloads\terminal_pl1\terminal\src\nodocolas.cpp
+	"NodoColas.h"
+
+1733347787 source:c:\users\unai\downloads\terminal_pl1\terminal\src\nodopilas.cpp
+	"NodoPilas.h"
+
+1733347787 source:c:\users\unai\downloads\terminal_pl1\terminal\src\persona.cpp
+	"Persona.h"
+	"iostream"
+	<cstring>
+
+1733347787 source:c:\users\unai\downloads\terminal_pl1\terminal\src\pilas.cpp
+	"Pilas.h"
+	"NodoPilas.h"
+	"iostream"
+
+1733347787 source:c:\users\unai\downloads\terminal_pl1\terminal\src\t4madrid.cpp
+	"T4Madrid.h"
+	<iostream>
+
