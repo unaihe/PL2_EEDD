@@ -253,3 +253,101 @@
 	"T4Madrid.h"
 	<iostream>
 
+1733347786 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\main.cpp
+	<iostream>
+	"Pilas.h"
+	"NodoPilas.h"
+	"Colas.h"
+	"T4Madrid.h"
+
+1733347786 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\include\pilas.h
+	"NodoPilas.h"
+
+1733347786 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\include\nodopilas.h
+	<iostream>
+	"Persona.h"
+
+1733347786 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\include\persona.h
+
+1733347786 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\include\colas.h
+	"NodoColas.h"
+	"Persona.h"
+
+1733347786 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\include\nodocolas.h
+	<iostream>
+	"Persona.h"
+
+1733347786 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\include\t4madrid.h
+	"Colas.h"
+	"Pilas.h"
+	"Persona.h"
+	"Box.h"
+	"Lista.h"
+
+1733347786 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\include\box.h
+	"Persona.h"
+	"Colas.h"
+
+1733347786 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\include\lista.h
+	"Box.h"
+	"Persona.h"
+
+1733348515 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\src\abb.cpp
+	"ABB.h"
+
+1733348515 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\include\abb.h
+
+1733347787 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\src\box.cpp
+	"Box.h"
+	<iostream>
+
+1733347787 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\src\colas.cpp
+	"Colas.h"
+	"iostream"
+
+1733347787 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\src\lista.cpp
+	"Lista.h"
+	<iostream>
+
+1733348524 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\src\nodoabb.cpp
+	"NodoABB.h"
+
+1733348523 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\include\nodoabb.h
+
+1733347787 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\src\nodocolas.cpp
+	"NodoColas.h"
+
+1733347787 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\src\nodopilas.cpp
+	"NodoPilas.h"
+
+1733347787 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\src\persona.cpp
+	"Persona.h"
+	"iostream"
+	<cstring>
+
+1733347787 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\src\pilas.cpp
+	"Pilas.h"
+	"NodoPilas.h"
+	"iostream"
+
+1733347787 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\src\t4madrid.cpp
+	"T4Madrid.h"
+	<iostream>
+
+1733351997 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\src\nodolistapasajero.cpp
+	"NodoListaPasajero.h"
+	"Persona.h"
+
+1733351909 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\include\nodolistapasajero.h
+	"Persona.h"
+
+1733352200 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\src\listapasajeros.cpp
+	"ListaPasajeros.h"
+	<iostream>
+	"Persona.h"
+	"NodoListaPasajero.h"
+
+1733352113 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\terminal_pl1\terminal\include\listapasajeros.h
+	"Persona.h"
+	"NodoListaPasajero.h"
+
