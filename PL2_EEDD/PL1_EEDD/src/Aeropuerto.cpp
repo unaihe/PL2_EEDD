@@ -229,6 +229,7 @@ void Aeropuerto::simularTiempo() {
             if (boxConMenosPasajeros) {
                 std::cout << "Asignando pasajero " << proxPasajero.getId() << " al box " << boxConMenosPasajeros->getBox().getId() << ".\n";
                 boxConMenosPasajeros->getBox().asignar_pasajero(proxPasajero);
+                arbolPasajeros.insertar(proxPasajero.getPais(), proxPasajero);
             } else {
                 std::cout << "Todos los boxes están llenos. Pasajero " << proxPasajero.getId() << " no puede ser atendido.\n";
             }
@@ -240,7 +241,7 @@ void Aeropuerto::simularTiempo() {
 
             if (boxActual.esta_libre() && !boxActual.getColaPasajeros().es_vacia()) {
                 Pasajero siguientePasajero = boxActual.getColaPasajeros().desencolar();
-                std::cout << "Pasajero " << siguientePasajero.getId() << " asignado al box " << boxActual.getId() << ".\n";
+                std::cout << "Pasajero " << siguientePasajero.getId() << " asignadooo al box " << boxActual.getId() << ".\n";
                 boxActual.asignar_pasajero(siguientePasajero);
 
 
@@ -279,5 +280,6 @@ void Aeropuerto::simularTiempo() {
         tiempoActual++;
     }
 
+    arbolPasajeros.mostrarArbol();
     std::cout << "Simulación completada. Todos los pasajeros han sido atendidos.\n";
 }

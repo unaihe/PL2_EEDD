@@ -1,9 +1,11 @@
 #include "NodoABB.h"
+#include "listaPasajeros.h"
 
-NodoABB::NodoABB(string nom, NodoABB *izq, NodoABB *der)
+NodoABB::NodoABB(string pais, NodoABB *izq, NodoABB *der)
 {
     //ctor
-    nombre=nom;
+    this->pais=pais;
+    listaPasajeros=ListaPasajeros();
     hi=izq;
     hd=der;
 
@@ -14,4 +16,4 @@ NodoABB::~NodoABB()
     //dtor
 }
 
-void NodoABB::verNombre(){cout<<nombre<<endl;}
+void NodoABB::verNombre(){cout<<pais<<endl;}

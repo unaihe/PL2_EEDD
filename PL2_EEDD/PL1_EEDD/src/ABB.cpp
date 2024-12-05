@@ -28,7 +28,7 @@ void ABB::verInOrden(NodoABB *arb)// Método para ver Arbol empezando por su izqu
 {
     if (arb) {
        verInOrden(arb->hi);//Recursion para la rama izquierda
-       cout<< arb->nombre<<endl;//Mostrar nombre
+       cout<< arb->pais<<endl;//Mostrar nombre
         verInOrden(arb->hd);// Recursion para la rama derecha
     }
 }
@@ -40,51 +40,41 @@ void ABB::verInOrden(NodoABB *arb)// Método para ver Arbol empezando por su izqu
         ABB hijoDer(raiz->hd);hijoDer.verInOrden();// Recursion para la rama derecha
     }
 }*/
-
-
-void ABB::insertar(string nombre)
-{
-    insertar(nombre, raiz);
+void ABB::mostrarArbol() {
+    mostrarArbol(raiz);
 }
-void ABB::insertar(string nombre, NodoABB *nodo)//En este método insertamos un nombre en el ABB para que siga ordenado
-{
 
+void ABB::mostrarArbol(NodoABB* nodo) {
+    if (nodo != nullptr) {
+        mostrarArbol(nodo->hi); // Recursión izquierda
 
-    if ((nodo->nombre>nombre) || (nodo->nombre ==nombre))
-        //((nombre.compare(nodo->nombre)==0) ||  (nombre.compare(nodo->nombre)<0)) usando funcion de string
+        // Mostrar el país y la lista de pasajeros
+        cout << "País: " << nodo->pais << endl;
+        cout << "Pasajeros:" << endl;
+        nodo->listaPasajeros.mostrarPasajeros();
 
-
-         { //Si el nombre del cliente es menor o igual al del nodo  raíz entoces comprobamos...
-
-
-        if (nodo->hi == NULL)//Si el nodo izquierdo está vacio entoces
-        {
-            //creo un objeto NodoABB para insertarlo en el ABB
-        NodoABB *nuevo=new NodoABB(nombre);
-        nodo->hi= nuevo;
-        }
-            //Creamos un nuevo nodo e incluimos el cliente y el pedido en la lista (se crea vscía)
-
-        else//En caso de que el nodo no estuviera vacio
-        {
-            insertar(nombre, nodo->hi);//insertamos al pasajero en el nodo izquierdo
-        }
+        mostrarArbol(nodo->hd); // Recursión derecha
     }
-    else// Si el nombre es > que el nodo
-    {
-        cout<<"es menor "<<nodo->nombre<<"que  "<< nombre<<endl;
-        if (nodo->hd == NULL)//Comprobamos si el derecho no existe
-        {
+}
 
-            //creo un objeto NodoABB para insertarlo en el ABB
-        NodoABB *nuevo=new NodoABB(nombre);
-            nodo->hd=nuevo;
-            }// Creamos un nuevo nodo en la rama derecha
+void ABB::insertar(string pais, Pasajero pasajero) {
+    insertar(pais, pasajero, raiz);
+}
 
-        else//si existe
-        {
-            insertar(nombre, nodo->hd);// insertamos el pasajero al nodo derecho
-        }
+void ABB::insertar(string pais, Pasajero pasajero, NodoABB*& nodo) {
+    if (nodo == nullptr) {
+        cout << "Creando nuevo nodo para el país: " << pais << endl;
+        nodo = new NodoABB(pais);
+        nodo->listaPasajeros.agregarPasajero(pasajero); // Agregar pasajero
+    } else if (pais < nodo->pais) {
+        cout << "El país " << pais << " es menor que " << nodo->pais << ". Insertando a la izquierda." << endl;
+        insertar(pais, pasajero, nodo->hi);
+    } else if (pais > nodo->pais) {
+        cout << "El país " << pais << " es mayor que " << nodo->pais << ". Insertando a la derecha." << endl;
+        insertar(pais, pasajero, nodo->hd);
+    } else {
+        cout << "El país " << pais << " ya existe. Agregando pasajero a la lista." << endl;
+        nodo->listaPasajeros.agregarPasajero(pasajero);
     }
 }
 
