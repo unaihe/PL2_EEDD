@@ -280,6 +280,50 @@ void Aeropuerto::simularTiempo() {
         tiempoActual++;
     }
 
-    arbolPasajeros.mostrarArbol();
+
     std::cout << "Simulación completada. Todos los pasajeros han sido atendidos.\n";
+}
+
+
+void Aeropuerto::agregarPasajeroArbol() {
+    // Leer datos del pasajero desde el teclado
+    int id, hora_llegada, duracion_control, prioridad;
+    std::string pais;
+
+    // Solicitar los datos del pasajero
+    std::cout << "Introduce el ID del pasajero: ";
+    std::cin >> id;
+    std::cout << "Introduce la hora de llegada: ";
+    std::cin >> hora_llegada;
+    std::cout << "Introduce la duración del control: ";
+    std::cin >> duracion_control;
+    std::cout << "Introduce el país de destino: ";
+    std::cin.ignore();  // Para ignorar el salto de línea residual de las entradas anteriores
+    std::getline(std::cin, pais);  // Leer cadena con espacios
+    std::cout << "Introduce la prioridad: ";
+    std::cin >> prioridad;
+
+    // Crear el objeto pasajero
+    Pasajero nuevoPasajero(id, hora_llegada, duracion_control, pais, prioridad);
+
+    // Insertar el pasajero en el árbol
+    arbolPasajeros.insertar(pais, nuevoPasajero);
+
+    std::cout << "Pasajero añadido al árbol con éxito.\n";
+}
+
+void Aeropuerto::mostrarArbol(){
+    arbolPasajeros.mostrarArbol();
+}
+
+void Aeropuerto::mostrarPasajerosPais() {
+    std::string pais;
+    std::cout << "Introduce el país para mostrar los pasajeros: ";
+    std::cin >> pais;
+
+    arbolPasajeros.mostrarPasajerosPais(pais);
+}
+
+void Aeropuerto::paisesOrdenados() {
+    arbolPasajeros.mostrarPaisesOrdenados();
 }

@@ -15,7 +15,6 @@ class NodoABB
         void verNombre();
 
 
-
     private:
         string pais;
         ListaPasajeros listaPasajeros;

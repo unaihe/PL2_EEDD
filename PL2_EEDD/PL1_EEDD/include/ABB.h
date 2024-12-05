@@ -19,9 +19,11 @@ class ABB
         void insertar(string pais, Pasajero pasajero, NodoABB*& nodo);
         void mostrarArbol();
         void mostrarArbol(NodoABB* nodo);
-
-
-
+        void mostrarPasajerosPais(const string& pais);
+        NodoABB* buscarPais(const std::string& pais);
+        NodoABB* buscarPais(const std::string& pais, NodoABB* nodo);
+        void mostrarPaisesOrdenados();
+        void mostrarPaisesEnOrden(NodoABB* nodo);
     protected:
 
     private:

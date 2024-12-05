@@ -22,8 +22,10 @@ class Aeropuerto
         void simularTiempo();
         bool boxesVacios();
         void eliminarBoxVacio();
-
-
+        void agregarPasajeroArbol();
+        void mostrarArbol();
+        void mostrarPasajerosPais();
+        void paisesOrdenados();
     private:
         Pila pilaPasajeros;
         Lista listaBoxes;

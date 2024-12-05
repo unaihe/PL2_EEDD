@@ -45,15 +45,32 @@ int main(){
                 aeropuerto.simularTiempo();
                 break;
             }
-            case 8: {
+            case 8:{
+                aeropuerto.agregarPasajeroArbol();
+                break;
+            }
+            case 9:{
+                aeropuerto.mostrarArbol();
+                break;
+            }
+            case 10:{
+                aeropuerto.mostrarPasajerosPais();
+                break;
+            }
+            case 11:{
+                aeropuerto.paisesOrdenados();
+                break;
+            }
+            case 16: {
                 std::cout << "Saliendo del programa...\n";
                 break;
             }
+
             default: {
                 std::cout << "Opción no válida. Intente de nuevo.\n";
             }
         }
-    } while (opcion != 8);
+    } while (opcion != 16);
 
     return 0;
 }
@@ -68,6 +85,10 @@ int main(){
     std::cout << "5. Mostrar el estado de los boxes\n";
     std::cout << "6. Consultar el box con mas y menos cola\n";
     std::cout << "7. Simular el control de aduanas completo\n";
-    std::cout << "8. Salir\n";
+    std::cout << "8. Introducir pasajero al arbol por pantalla\n";
+    std::cout << "9. Ver datos del árbol\n";
+    std::cout << "10. Buscar por país\n";
+    std::cout << "11. Mostrar paises ordenados\n";
+    std::cout << "16. Salir\n";
     std::cout << "Seleccione una opción: ";
 }
