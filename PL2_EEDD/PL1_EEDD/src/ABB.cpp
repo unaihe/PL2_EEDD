@@ -162,3 +162,53 @@ void ABB::mostrarPaisesEnOrden(NodoABB* nodo)
     // Recorremos el subárbol derecho
     mostrarPaisesEnOrden(nodo->hd);
 }
+void ABB::calcularPaisMasYMenosPasajeros() {
+    if (raiz == nullptr) {
+        std::cout << "No hay países en el árbol." << std::endl;
+        return;
+    }
+
+    // Inicializamos las variables para almacenar el país con más y menos pasajeros
+    NodoABB* paisMas = nullptr;
+    NodoABB* paisMenos = nullptr;
+    int maxPasajeros = -1;  // Inicializamos con un valor negativo, ya que no queremos que se considere la raíz como la inicial
+    int minPasajeros = INT_MAX;  // Inicializamos con un valor muy alto
+
+    // Recorremos el árbol en inorden
+    calcularPaisMasYMenosPasajeros(raiz, paisMas, paisMenos, maxPasajeros, minPasajeros);
+
+    if (paisMas != nullptr) {
+        std::cout << "País con más pasajeros: " << paisMas->pais << " con " << maxPasajeros << " pasajeros." << std::endl;
+    }
+    if (paisMenos != nullptr) {
+        std::cout << "País con menos pasajeros: " << paisMenos->pais << " con " << minPasajeros << " pasajeros." << std::endl;
+    }
+}
+
+void ABB::calcularPaisMasYMenosPasajeros(NodoABB* nodo, NodoABB*& paisMas, NodoABB*& paisMenos, int& maxPasajeros, int& minPasajeros) {
+    if (nodo != nullptr) {
+        // Primero recorremos el subárbol izquierdo
+        calcularPaisMasYMenosPasajeros(nodo->hi, paisMas, paisMenos, maxPasajeros, minPasajeros);
+
+        // Solo procesamos nodos que no sean la raíz con el país "MM"
+        if (nodo->pais != "MM") {
+            // Contamos los pasajeros de este nodo
+            int numPasajeros = nodo->listaPasajeros.getLongitud();  // Suponiendo que getLongitud() retorna el número de pasajeros
+
+            // Comprobamos si es el país con más pasajeros
+            if (numPasajeros > maxPasajeros) {
+                paisMas = nodo;
+                maxPasajeros = numPasajeros;
+            }
+
+            // Comprobamos si es el país con menos pasajeros
+            if (numPasajeros < minPasajeros) {
+                paisMenos = nodo;
+                minPasajeros = numPasajeros;
+            }
+        }
+
+        // Luego recorremos el subárbol derecho
+        calcularPaisMasYMenosPasajeros(nodo->hd, paisMas, paisMenos, maxPasajeros, minPasajeros);
+    }
+}

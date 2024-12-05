@@ -11,12 +11,12 @@ class NodoListaPasajeros
         Pasajero& getPasajero();
         NodoListaPasajeros* getSiguiente();
         void setSiguiente(NodoListaPasajeros* siguienteNod);
-
+        NodoListaPasajeros* siguiente;
 
 
     private:
         Pasajero pasajero;
-        NodoListaPasajeros* siguiente;
+
 };
 
 #endif // NODOLISTAPASAJEROS_H

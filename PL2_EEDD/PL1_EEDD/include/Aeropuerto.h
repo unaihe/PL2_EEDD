@@ -26,6 +26,7 @@ class Aeropuerto
         void mostrarArbol();
         void mostrarPasajerosPais();
         void paisesOrdenados();
+        void masMenos();
     private:
         Pila pilaPasajeros;
         Lista listaBoxes;

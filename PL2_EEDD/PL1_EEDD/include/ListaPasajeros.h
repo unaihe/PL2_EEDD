@@ -19,7 +19,7 @@ class ListaPasajeros
 
         // Obtener la cabeza de la lista (primer nodo)
         NodoListaPasajeros* getCabeza();
-
+        int getLongitud() const;
 
     private:
         NodoListaPasajeros* cabeza;

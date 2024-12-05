@@ -18,6 +18,15 @@ ListaPasajeros::~ListaPasajeros() {
     }
 }
 
+int ListaPasajeros::getLongitud() const {
+        int longitud = 0;
+        NodoListaPasajeros* temp = cabeza;
+        while (temp != nullptr) {
+            longitud++;
+            temp = temp->siguiente;
+        }
+        return longitud;
+    }
 
 void ListaPasajeros::agregarPasajero(Pasajero p) {
     NodoListaPasajeros* nuevoNodo = new NodoListaPasajeros(p);

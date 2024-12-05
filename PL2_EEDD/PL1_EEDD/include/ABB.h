@@ -24,7 +24,8 @@ class ABB
         NodoABB* buscarPais(const std::string& pais, NodoABB* nodo);
         void mostrarPaisesOrdenados();
         void mostrarPaisesEnOrden(NodoABB* nodo);
-    protected:
+        void calcularPaisMasYMenosPasajeros();
+        void calcularPaisMasYMenosPasajeros(NodoABB* nodo, NodoABB*& paisMas, NodoABB*& paisMenos, int& maxPasajeros, int& minPasajeros);
 
     private:
         NodoABB *raiz;

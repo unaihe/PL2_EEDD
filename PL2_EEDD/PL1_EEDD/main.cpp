@@ -61,6 +61,10 @@ int main(){
                 aeropuerto.paisesOrdenados();
                 break;
             }
+            case 12:{
+                aeropuerto.masMenos();
+                break;
+            }
             case 16: {
                 std::cout << "Saliendo del programa...\n";
                 break;
@@ -89,6 +93,7 @@ int main(){
     std::cout << "9. Ver datos del árbol\n";
     std::cout << "10. Buscar por país\n";
     std::cout << "11. Mostrar paises ordenados\n";
+    std::cout << "12. Mayor número de pasajeros y menor por país\n";
     std::cout << "16. Salir\n";
     std::cout << "Seleccione una opción: ";
 }

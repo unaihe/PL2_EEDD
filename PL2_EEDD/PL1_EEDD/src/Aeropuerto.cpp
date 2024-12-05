@@ -327,3 +327,7 @@ void Aeropuerto::mostrarPasajerosPais() {
 void Aeropuerto::paisesOrdenados() {
     arbolPasajeros.mostrarPaisesOrdenados();
 }
+
+void Aeropuerto::masMenos() {
+    arbolPasajeros.calcularPaisMasYMenosPasajeros();
+}
