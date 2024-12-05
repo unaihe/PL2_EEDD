@@ -5,11 +5,12 @@ using namespace std;
 #include "Box.h"
 
 
-Aeropuerto::Aeropuerto()
+Aeropuerto::Aeropuerto():arbolPasajeros("MM")
 {
     //ctor
     tiempoTranscurrido=0;
     listaBoxes.agregarBox(Box(1));
+
 }
 
 Aeropuerto::~Aeropuerto()

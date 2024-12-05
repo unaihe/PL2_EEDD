@@ -4,7 +4,7 @@ using namespace std;
 #include <iostream>
 
 
-Cola::Cola()
+Cola::Cola(): longitud(0)
 {
     //ctor
     primero = nullptr;

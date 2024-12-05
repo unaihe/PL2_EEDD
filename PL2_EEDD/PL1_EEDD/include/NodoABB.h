@@ -8,6 +8,7 @@ using namespace std;
 class NodoABB
 {
     friend class ABB;
+
     public:
         NodoABB(string nom, NodoABB *izq=NULL, NodoABB *der=NULL);
         virtual ~NodoABB();

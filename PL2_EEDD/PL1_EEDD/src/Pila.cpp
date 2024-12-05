@@ -50,12 +50,12 @@ void Pila::invertirPila() {
 
 
 
-void Pila::desapilar(){
-NodoPila* nodo;
-if (cima)
-    nodo = cima;
-    cima = nodo->siguiente;
-    delete nodo;
+void Pila::desapilar() {
+    if (cima != nullptr) {
+        NodoPila* nodo = cima;
+        cima = nodo->siguiente;
+        delete nodo;
+    }
 }
 void Pila::mostrarPila(){
     NodoPila* temp = cima;

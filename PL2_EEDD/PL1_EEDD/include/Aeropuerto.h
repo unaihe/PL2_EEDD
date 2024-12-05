@@ -28,6 +28,7 @@ class Aeropuerto
         Pila pilaPasajeros;
         Lista listaBoxes;
         int tiempoTranscurrido;
+        ABB arbolPasajeros;
 };
 
 #endif // AEROPUERTO_H
