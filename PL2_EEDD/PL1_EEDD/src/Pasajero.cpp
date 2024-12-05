@@ -1,17 +1,17 @@
 #include "Pasajero.h"
 #include <iostream>
-
+#include <string>
 Pasajero::Pasajero()
 {
     //ctor
 }
 
-Pasajero::Pasajero(int id,int hora_llegada,int duracion_control, const char* destino, int prioridad)
+Pasajero::Pasajero(int id,int hora_llegada,int duracion_control, std::string pais, int prioridad)
 {
     this->id=id;
     this->hora_llegada=hora_llegada;
     this->duracion_control=duracion_control;
-    this->destino=destino;
+    this->pais=pais;
     this->prioridad=prioridad;
     this->tiempoFinal=0;
     this->tiempoAeropuerto=0;
@@ -47,9 +47,9 @@ int Pasajero::getDuracion_control() const
     return duracion_control;
 };
 
-const char* Pasajero::getDestino() const
+std::string Pasajero::getPais() const
 {
-    return destino;
+    return pais;
 };
 
 int Pasajero::getPrioridad() const
@@ -61,7 +61,7 @@ void Pasajero::mostrarPasajero(const Pasajero& pasajero) {
     std::cout << "ID Pasajero: " << pasajero.getId() << std::endl;
     std::cout << "Hora de llegada: " << pasajero.getHora_llegada() << " minutos" << std::endl;
     std::cout << "Duración del control: " << pasajero.getDuracion_control() << " minutos" << std::endl;
-    std::cout << "País de destino: " << pasajero.getDestino() << std::endl;
+    std::cout << "País de destino: " << pasajero.getPais() << std::endl;
     std::cout << "Prioridad: " << pasajero.getPrioridad() << std::endl;
     std::cout << "-------------------------------" << std::endl;
 }

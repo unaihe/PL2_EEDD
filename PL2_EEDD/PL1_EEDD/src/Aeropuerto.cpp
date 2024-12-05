@@ -242,6 +242,8 @@ void Aeropuerto::simularTiempo() {
                 Pasajero siguientePasajero = boxActual.getColaPasajeros().desencolar();
                 std::cout << "Pasajero " << siguientePasajero.getId() << " asignado al box " << boxActual.getId() << ".\n";
                 boxActual.asignar_pasajero(siguientePasajero);
+
+
             }
         }
 

@@ -345,7 +345,8 @@
 	"Pila.h"
 	"Aeropuerto.h"
 
-1733405224 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\pl1_eedd\include\pasajero.h
+1733412501 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\pl1_eedd\include\pasajero.h
+	<string>
 
 1733404835 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\pl1_eedd\include\pila.h
 	"Pasajero.h"
@@ -382,13 +383,13 @@
 1733404835 c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\pl1_eedd\include\nodolista.h
 	"Box.h"
 
-1733411459 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\pl1_eedd\src\aeropuerto.cpp
+1733412243 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\pl1_eedd\src\aeropuerto.cpp
 	"Aeropuerto.h"
 	"Pasajero.h"
 	<iostream>
 	"Box.h"
 
-1733404835 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\pl1_eedd\src\box.cpp
+1733411976 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\pl1_eedd\src\box.cpp
 	"Box.h"
 	<iostream>
 
@@ -414,9 +415,10 @@
 1733404835 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\pl1_eedd\src\nodopila.cpp
 	"NodoPila.h"
 
-1733405225 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\pl1_eedd\src\pasajero.cpp
+1733412501 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\pl1_eedd\src\pasajero.cpp
 	"Pasajero.h"
 	<iostream>
+	<string>
 
 1733409191 source:c:\users\unai\onedrive\documentos\github\pl2_eedd\pl2_eedd\pl1_eedd\src\pila.cpp
 	"Pila.h"

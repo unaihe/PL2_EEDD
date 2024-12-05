@@ -63,7 +63,7 @@ void Pila::mostrarPila(){
         std::cout << "ID Pasajero: " << temp->p.getId() << std::endl;
         std::cout << "Hora de Llegada: " << temp->p.getHora_llegada() << " minutos" << std::endl;
         std::cout << "Duracion del Control: " << temp->p.getDuracion_control() << " minutos" << std::endl;
-        std::cout << "Pais de Destino: " << temp->p.getDestino() << std::endl;
+        std::cout << "Pais de Destino: " << temp->p.getPais() << std::endl;
         std::cout << "Prioridad: " << temp->p.getPrioridad() << std::endl;
         std::cout << "-----------------------------" << std::endl;
         temp = temp->siguiente;
