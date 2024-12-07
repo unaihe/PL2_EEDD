@@ -29,7 +29,10 @@ class ABB
         void setTiempoFinal(int i, int id);
         Pasajero* buscarPorId(int id);
         Pasajero* buscarRecursivo(NodoABB* nodo, int id);
-
+        void calcularTiempoMedioPais(const std::string& pais);
+        void calcularTiempoMedioPaisPreorden();
+        void calcularTiempoMedioPaisPreorden(NodoABB* nodo);
+        void calcularTiempoMedioPaisDePais(NodoABB* nodo);
     private:
         NodoABB *raiz;
 };

@@ -27,6 +27,8 @@ class Aeropuerto
         void mostrarPasajerosPais();
         void paisesOrdenados();
         void masMenos();
+        void tiempoMedioPais();
+        void tiempoMedioPaises();
     private:
         Pila pilaPasajeros;
         Lista listaBoxes;

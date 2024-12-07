@@ -219,9 +219,9 @@ void ABB::setTiempoFinal(int tiempo, int id) {
         if (pasajeroEncontrado != nullptr) {
             int tiempoEstadia = tiempo;
             pasajeroEncontrado->setTiempoFinal(tiempoEstadia); // Asignar el tiempo final al pasajero
-            std::cout << "Tiempo final para pasajero " << id << " es: " << tiempoEstadia << std::endl;
+
         } else {
-            std::cout << "Pasajero con ID " << id << " no encontrado.\n";
+
         }
     }
 
@@ -257,3 +257,89 @@ Pasajero* ABB::buscarRecursivo(NodoABB* nodo, int id) {
 }
 
 
+void ABB::calcularTiempoMedioPais(const std::string& pais) {
+    // Buscar el nodo correspondiente al país en el árbol
+    NodoABB* nodoPais = buscarPais(pais);
+
+    if (nodoPais == nullptr) {
+        std::cout << "El país " << pais << " no está presente en el árbol.\n";
+        return;
+    }
+
+    // Obtener la lista de pasajeros del país encontrado
+    ListaPasajeros& listaPasajeros = nodoPais->listaPasajeros;
+
+    // Variables para calcular el tiempo medio
+    int sumaTiempo = 0;
+    int numPasajeros = listaPasajeros.getLongitud();  // Número de pasajeros en la lista
+
+    if (numPasajeros == 0) {
+        std::cout << "No hay pasajeros con destino a " << pais << ".\n";
+        return;
+    }
+
+    // Recorrer la lista de pasajeros y calcular la suma de los tiempos
+    for (NodoListaPasajeros* temp = listaPasajeros.getCabeza(); temp != nullptr; temp = temp->getSiguiente()) {
+        sumaTiempo += temp->getPasajero().getTiempoFinal();
+    }
+
+    // Calcular el tiempo medio
+    double tiempoMedio = static_cast<double>(sumaTiempo) / numPasajeros;
+
+    // Mostrar el resultado
+    std::cout << "El tiempo medio de estancia en el aeropuerto de los pasajeros con destino a "
+              << pais << " es: " << tiempoMedio << " minutos.\n";
+}
+
+void ABB::calcularTiempoMedioPaisPreorden() {
+    // Verificamos si el árbol está vacío
+    if (raiz == nullptr) {
+        std::cout << "El árbol está vacío.\n";
+        return;
+    }
+
+    // Recorrido en preorden, comenzamos desde la raíz
+    calcularTiempoMedioPaisPreorden(raiz);
+}
+
+void ABB::calcularTiempoMedioPaisPreorden(NodoABB* nodo) {
+    if (nodo != nullptr) {
+        // Verificamos si el país del nodo no es "MM" antes de calcular el tiempo medio
+        if (nodo->pais != "MM") {
+            // Calculamos el tiempo medio para el país del nodo actual
+            calcularTiempoMedioPaisDePais(nodo);
+        }
+
+        // Recorrer el subárbol izquierdo en preorden
+        calcularTiempoMedioPaisPreorden(nodo->hi);
+
+        // Recorrer el subárbol derecho en preorden
+        calcularTiempoMedioPaisPreorden(nodo->hd);
+    }
+}
+
+void ABB::calcularTiempoMedioPaisDePais(NodoABB* nodo) {
+    // Obtener la lista de pasajeros de este país
+    ListaPasajeros& listaPasajeros = nodo->listaPasajeros;
+
+    // Variables para calcular el tiempo medio
+    int sumaTiempo = 0;
+    int numPasajeros = listaPasajeros.getLongitud();  // Número de pasajeros en la lista
+
+    if (numPasajeros == 0) {
+        std::cout << "No hay pasajeros con destino a " << nodo->pais << ".\n";
+        return;
+    }
+
+    // Recorrer la lista de pasajeros y calcular la suma de los tiempos
+    for (NodoListaPasajeros* temp = listaPasajeros.getCabeza(); temp != nullptr; temp = temp->getSiguiente()) {
+        sumaTiempo += temp->getPasajero().getTiempoFinal();
+    }
+
+    // Calcular el tiempo medio
+    double tiempoMedio = static_cast<double>(sumaTiempo) / numPasajeros;
+
+    // Mostrar el resultado
+    std::cout << "El tiempo medio de estancia en el aeropuerto de los pasajeros con destino a "
+              << nodo->pais << " es: " << tiempoMedio << " minutos.\n";
+}

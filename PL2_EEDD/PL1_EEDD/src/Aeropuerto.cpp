@@ -334,3 +334,15 @@ void Aeropuerto::paisesOrdenados() {
 void Aeropuerto::masMenos() {
     arbolPasajeros.calcularPaisMasYMenosPasajeros();
 }
+
+void Aeropuerto::tiempoMedioPais() {
+    std::string pais;
+    std::cout << "Introduce el país para mostrar los pasajeros: ";
+    std::cin >> pais;
+
+    arbolPasajeros.calcularTiempoMedioPais(pais);
+}
+
+void Aeropuerto::tiempoMedioPaises(){
+    arbolPasajeros.calcularTiempoMedioPaisPreorden();
+}

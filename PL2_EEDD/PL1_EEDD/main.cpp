@@ -65,7 +65,15 @@ int main(){
                 aeropuerto.masMenos();
                 break;
             }
-            case 16: {
+            case 13:{
+                aeropuerto.tiempoMedioPais();
+                break;
+            }
+            case 14:{
+                aeropuerto.tiempoMedioPaises();
+                break;
+            }
+            case 15: {
                 std::cout << "Saliendo del programa...\n";
                 break;
             }
@@ -74,7 +82,7 @@ int main(){
                 std::cout << "Opción no válida. Intente de nuevo.\n";
             }
         }
-    } while (opcion != 16);
+    } while (opcion != 15);
 
     return 0;
 }
@@ -94,6 +102,8 @@ int main(){
     std::cout << "10. Buscar por país\n";
     std::cout << "11. Mostrar paises ordenados\n";
     std::cout << "12. Mayor número de pasajeros y menor por país\n";
-    std::cout << "16. Salir\n";
+    std::cout << "13. Media de tiempo por país\n";
+    std::cout << "14. Media de tiempo paises\n";
+    std::cout << "15. Salir\n";
     std::cout << "Seleccione una opción: ";
 }

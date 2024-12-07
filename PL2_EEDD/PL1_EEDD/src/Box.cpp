@@ -50,7 +50,7 @@ void Box::liberar_box(int i) {
     }
 }
 Pasajero Box::getPasajeroTemporal(){
-    std::cout << "Liberando asdadadadadsel box " << pasajeroTemporal.getTiempoFinal() << " ocupado por el pasajero " << pasajero.getId() << ".\n";
+
     return pasajeroTemporal;
 }
 
