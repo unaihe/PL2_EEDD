@@ -12,6 +12,7 @@ Box::Box(int id)
 {
     //ctor
     this->id=id;
+
 }
 
 Box::~Box()
@@ -37,6 +38,7 @@ void Box::liberar_box(int i) {
         int tiempo= i-pasajero.getHora_llegada();
         pasajero.setTiempoFinal(tiempo);
         media=tiempoTotal/pasajeros;
+        this->pasajeroTemporal=pasajero;
         std::cout << "Liberando el box " << id << " ocupado por el pasajero " << pasajero.getId() << ".\n";
         ocupado = false;
         tiempo_restante = 0;
@@ -47,6 +49,11 @@ void Box::liberar_box(int i) {
         }
     }
 }
+Pasajero Box::getPasajeroTemporal(){
+    std::cout << "Liberando asdadadadadsel box " << pasajeroTemporal.getTiempoFinal() << " ocupado por el pasajero " << pasajero.getId() << ".\n";
+    return pasajeroTemporal;
+}
+
 bool Box::esta_libre() {
     return !ocupado;
 }

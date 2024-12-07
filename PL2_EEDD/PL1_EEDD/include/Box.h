@@ -22,6 +22,7 @@ class Box
         int numeroPasajeros();
         Cola getColaPasajeros();
         bool hayPasajerosAtendidos();
+        Pasajero getPasajeroTemporal();
     private:
         int id;
         bool ocupado=false;
@@ -31,6 +32,7 @@ class Box
         Cola colaPasajeros;
         int tiempoTotal=0;
         int pasajeros=0;
+        Pasajero pasajeroTemporal;
 };
 
 #endif // BOX_H

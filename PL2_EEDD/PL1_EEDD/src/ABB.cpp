@@ -212,3 +212,48 @@ void ABB::calcularPaisMasYMenosPasajeros(NodoABB* nodo, NodoABB*& paisMas, NodoA
         calcularPaisMasYMenosPasajeros(nodo->hd, paisMas, paisMenos, maxPasajeros, minPasajeros);
     }
 }
+
+
+void ABB::setTiempoFinal(int tiempo, int id) {
+        Pasajero* pasajeroEncontrado = buscarPorId(id); // Buscar el pasajero por ID
+        if (pasajeroEncontrado != nullptr) {
+            int tiempoEstadia = tiempo;
+            pasajeroEncontrado->setTiempoFinal(tiempoEstadia); // Asignar el tiempo final al pasajero
+            std::cout << "Tiempo final para pasajero " << id << " es: " << tiempoEstadia << std::endl;
+        } else {
+            std::cout << "Pasajero con ID " << id << " no encontrado.\n";
+        }
+    }
+
+    // Función de búsqueda recursiva por ID
+    Pasajero* ABB::buscarPorId(int id) {
+        return buscarRecursivo(raiz, id);
+    }
+
+
+// Método recursivo para buscar un pasajero por su ID en el árbol
+Pasajero* ABB::buscarRecursivo(NodoABB* nodo, int id) {
+    if (nodo != nullptr) {
+        // Buscar en el subárbol izquierdo
+        Pasajero* resultado = buscarRecursivo(nodo->hi, id);
+        if (resultado != nullptr) {
+            return resultado; // Si lo encontramos en el subárbol izquierdo, lo devolvemos
+        }
+
+        // Si no se encuentra en el subárbol izquierdo, buscamos en la lista de pasajeros del nodo actual
+        NodoListaPasajeros* temp = nodo->listaPasajeros.getCabeza();
+        while (temp != nullptr) {
+            if (temp->getPasajero().getId() == id) {
+                return &(temp->getPasajero()); // Si encontramos el pasajero, devolvemos su puntero
+            }
+            temp = temp->getSiguiente(); // Avanzamos al siguiente pasajero
+        }
+
+        // Si no se encuentra en este nodo, buscar en el subárbol derecho
+        return buscarRecursivo(nodo->hd, id);
+    }
+
+    return nullptr;
+}
+
+

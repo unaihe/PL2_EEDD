@@ -26,6 +26,9 @@ class ABB
         void mostrarPaisesEnOrden(NodoABB* nodo);
         void calcularPaisMasYMenosPasajeros();
         void calcularPaisMasYMenosPasajeros(NodoABB* nodo, NodoABB*& paisMas, NodoABB*& paisMenos, int& maxPasajeros, int& minPasajeros);
+        void setTiempoFinal(int i, int id);
+        Pasajero* buscarPorId(int id);
+        Pasajero* buscarRecursivo(NodoABB* nodo, int id);
 
     private:
         NodoABB *raiz;
