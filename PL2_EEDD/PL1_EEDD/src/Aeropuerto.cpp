@@ -141,6 +141,7 @@ void Aeropuerto::simularMinutos() {
                 std::cout << "Asignando pasajero " << proxPasajero.getId() << " al box "
                           << boxConMenosPasajeros->getBox().getId() << ".\n";
                 boxConMenosPasajeros->getBox().asignar_pasajero(proxPasajero);
+                arbolPasajeros.insertar(proxPasajero.getPais(), proxPasajero);
             } else {
                 std::cout << "Todos los boxes están llenos. Pasajero " << proxPasajero.getId() << " no puede ser atendido.\n";
             }
@@ -305,7 +306,7 @@ void Aeropuerto::agregarPasajeroArbol() {
 
     // Crear el objeto pasajero
     Pasajero nuevoPasajero(id, hora_llegada, duracion_control, pais, prioridad);
-
+    nuevoPasajero.setTiempoFinal(duracion_control);
     // Insertar el pasajero en el árbol
     arbolPasajeros.insertar(pais, nuevoPasajero);
 
