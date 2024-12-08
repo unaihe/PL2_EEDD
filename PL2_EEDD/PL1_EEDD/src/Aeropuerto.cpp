@@ -116,6 +116,8 @@ void Aeropuerto::simularMinutos() {
 
         for (NodoLista* temp = listaBoxes.getCabeza(); temp != nullptr; temp = temp->getSiguiente()) {
             temp->getBox().disminuirTiempo(tiempoActual);
+            Pasajero temporal=temp->getBox().getPasajeroTemporal();
+            arbolPasajeros.setTiempoFinal(temporal.getTiempoFinal(),temporal.getId());
         }
 
 
